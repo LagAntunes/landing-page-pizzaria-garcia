@@ -1,0 +1,25 @@
+.promotions {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    &-cards {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        
+        &-item {
+            width: 400px;
+            height: 300px;
+        }
+    }
+}
+
+//Responsivo

@@ -1,0 +1,95 @@
+.flavors {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    &-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 328px;
+            height: auto;
+            min-height: 350px;
+            padding: 20px 20px 101px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+
+            &::before {
+                content: '';
+                background-image: url('../../assets/images/card.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 101px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 0;
+                transform: scaleX(-1);
+                transition: all ease-in-out .4s;
+            }
+
+            img {
+                width: 328px;
+                height: 220px;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+
+            strong {
+                font-size: 25px;
+                line-height: 25px;
+                font-family: "LilitaOne";
+                font-weight: 600;
+                color: #e02b2b;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                align-self: center;
+                width: fit-content;
+                height: 40px;
+                padding: 0 20px;
+                background-color: #e8ca05;
+                border-radius: 20px;
+                font-size: 16px;
+                line-height: 16px;
+                font-family: "VarelaRound";
+                font-weight: 800;
+                color: #ffffff;
+                text-decoration: none;
+                transition: all ease-in-out .4s;
+    
+                &:hover {
+                    background-color: #000000;
+                }
+            }
+
+            &:hover {
+                &::before {
+                  height: 111px;
+                  background-image: url('../../assets/images/card-hover.svg');
+                }
+            }
+        }
+    }
+}
+
+//Responsivo

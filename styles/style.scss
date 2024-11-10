@@ -1,6 +1,8 @@
 @import './fonts';
 @import './components/header.scss';
 @import './components/webdoor.scss';
+@import './components/flavors.scss';
+@import './components/promotions.scss';
 
 /* Formatação padrão */
 *, html {
@@ -11,4 +13,22 @@
 
 body {
     padding-top: 100px;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        section {
+            h3 {
+                font-size: 30px;
+                line-height: 32px;
+                font-family: "LilitaOne";
+                font-weight: 600;
+                color: #000000;
+                text-align: center;
+                overflow: hidden;
+            }
+        }
+    }
 }
