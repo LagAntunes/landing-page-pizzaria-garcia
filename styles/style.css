@@ -1,3 +1,182 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "LilitaOne";
+  src: url("../assets/fonts/Lilita_One/LilitaOne-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "VarelaRound";
+  src: url("../assets/fonts/Varela_Round/VarelaRound-Regular.ttf") format("truetype");
+}
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  max-width: 1400px;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}
+.header-wrapper .header-logo {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+.header-wrapper .header-logo img {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.header-wrapper .header-logo h1 {
+  font-size: 0;
+}
+.header-wrapper nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+}
+.header-wrapper nav ul li a {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "LilitaOne";
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  transition: all ease-in-out 0.4s;
+}
+.header-wrapper nav ul li a:hover {
+  color: #e02b2b;
+}
 
+.webdoor {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+}
+.webdoor::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 7;
+  background-color: #e02b2b;
+}
+.webdoor-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  padding: 80px 0 0 20px;
+}
+.webdoor-content h2 {
+  font-size: 70px;
+  line-height: 72px;
+  font-family: "LilitaOne";
+  font-weight: 400;
+  color: #000000;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.webdoor-content p {
+  font-size: 20px;
+  line-height: 25px;
+  font-family: "VarelaRound";
+  font-weight: 600;
+  color: #96908f;
+  padding-bottom: 30px;
+}
+.webdoor-content a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 40px;
+  padding: 0 20px;
+  background-color: #e8ca05;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "VarelaRound";
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all ease-in-out 0.4s;
+}
+.webdoor-content a:hover {
+  background-color: #000000;
+}
+.webdoor img {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 8;
+}
+.webdoor-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.webdoor-circle p {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "VarelaRound";
+  font-weight: 600;
+  color: #e8ca05;
+  text-align: center;
+  overflow: hidden;
+}
+.webdoor-circle span {
+  font-size: 25px;
+  line-height: 25px;
+  font-family: "LilitaOne";
+  font-weight: 600;
+  color: #e02b2b;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Formatação padrão */
+*, html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 100px;
+}
 
 /*# sourceMappingURL=style.css.map */
