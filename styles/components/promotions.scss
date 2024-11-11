@@ -1,13 +1,11 @@
 .promotions {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     gap: 40px;
     max-width: 1400px;
     width: 100%;
     height: auto;
-    padding: 0 20px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 
     &-cards {
         display: flex;
@@ -16,8 +14,88 @@
         height: auto;
         
         &-item {
-            width: 400px;
-            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            width: 33.3%;
+            height: 220px;
+            padding: 20px 170px 20px 20px;
+            position: relative;
+            overflow: hidden;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0.08;
+                z-index: -1;
+            }
+
+            &::after {
+                position: absolute;
+                top: -70px;
+                right: -110px;
+                width: 300px;
+                height: 300px;
+            }
+
+            &:nth-child(1) {
+                &::before {
+                    background: url("../assets/images/xadrez-1.svg");
+                }
+
+                &::after {
+                    content: url("../assets/images/pizza-1.png");
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    background: url("../assets/images/xadrez-2.svg");
+                }
+
+                &::after {
+                    content: url("../assets/images/pizza-2.png");
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    background: url("../assets/images/xadrez-3.svg");
+                    opacity: 0.2;
+                }
+
+                &::after {
+                    content: url("../assets/images/pizza-3.png");
+                }
+            }
+
+            strong {
+                font-size: 25px;
+                line-height: 25px;
+                font-family: "LilitaOne";
+                font-weight: 600;
+                color: #000000;
+                overflow: hidden;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 22px;
+                font-family: "VarelaRound";
+                font-weight: 500;
+                color: #000000;
+                overflow: hidden;
+
+                span {
+                    color: #e02b2b;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
