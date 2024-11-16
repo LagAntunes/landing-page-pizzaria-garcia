@@ -12,7 +12,6 @@
   justify-content: center;
   width: 100vw;
   height: 100px;
-  padding: 0 20px;
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(6px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -27,7 +26,7 @@
   justify-content: center;
   align-items: center;
   gap: 70px;
-  max-width: 1400px;
+  max-width: 1000px;
   width: 100%;
   height: 100%;
 }
@@ -50,16 +49,35 @@
   list-style: none;
 }
 .header-wrapper nav ul li a {
+  display: flex;
   font-size: 16px;
   line-height: 16px;
   font-family: "LilitaOne";
   font-weight: 400;
   color: #000000;
   text-decoration: none;
+  padding-bottom: 3px;
+  position: relative;
   transition: all ease-in-out 0.4s;
+}
+.header-wrapper nav ul li a::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e02b2b;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out;
 }
 .header-wrapper nav ul li a:hover {
   color: #e02b2b;
+}
+.header-wrapper nav ul li a:hover::after {
+  transform: scaleX(1);
 }
 
 .webdoor {
@@ -108,7 +126,6 @@
   font-weight: 400;
   color: #000000;
   padding-bottom: 20px;
-  overflow: hidden;
 }
 .webdoor-content p {
   font-size: 20px;
@@ -199,7 +216,6 @@
   font-weight: 600;
   color: #e8ca05;
   text-align: center;
-  overflow: hidden;
 }
 .webdoor-circle span {
   font-size: 25px;
@@ -208,7 +224,6 @@
   font-weight: 600;
   color: #e02b2b;
   text-align: center;
-  overflow: hidden;
 }
 
 .flavors {
@@ -268,7 +283,6 @@
   font-weight: 600;
   color: #e02b2b;
   text-align: center;
-  overflow: hidden;
 }
 .flavors-cards-item p {
   font-size: 16px;
@@ -277,7 +291,6 @@
   font-weight: 600;
   color: #96908f;
   text-align: center;
-  overflow: hidden;
 }
 .flavors-cards-item a {
   display: flex;
@@ -325,7 +338,7 @@
   justify-content: center;
   gap: 15px;
   width: 33.3%;
-  height: 220px;
+  height: auto;
   padding: 20px 170px 20px 20px;
   position: relative;
   overflow: hidden;
@@ -372,7 +385,6 @@
   font-family: "LilitaOne";
   font-weight: 600;
   color: #000000;
-  overflow: hidden;
 }
 .promotions-cards-item p {
   font-size: 18px;
@@ -380,11 +392,129 @@
   font-family: "VarelaRound";
   font-weight: 500;
   color: #000000;
-  overflow: hidden;
 }
 .promotions-cards-item p span {
   color: #e02b2b;
   font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100vw;
+  height: auto;
+  background-color: #e02b2b;
+  padding: 120px 0 20px;
+  clip-path: polygon(100% 100%, 0% 100%, 0% 10.33%, 1% 9.56%, 2% 8.8%, 3% 8.06%, 4% 7.34%, 5% 6.63%, 6% 5.95%, 7% 5.29%, 8% 4.67%, 9% 4.07%, 10% 3.51%, 11% 2.98%, 12% 2.49%, 13% 2.04%, 14% 1.63%, 15% 1.27%, 16% 0.94%, 17% 0.67%, 18% 0.44%, 19% 0.26%, 20% 0.12%, 21% 0.04%, 22% 0%, 23% 0.01%, 24% 0.08%, 25% 0.19%, 26% 0.35%, 27% 0.56%, 28% 0.81%, 29% 1.12%, 30% 1.46%, 31% 1.85%, 32% 2.29%, 33% 2.76%, 34% 3.27%, 35% 3.82%, 36% 4.4%, 37% 5.01%, 38% 5.66%, 39% 6.33%, 40% 7.02%, 41% 7.74%, 42% 8.47%, 43% 9.22%, 44% 9.99%, 45% 10.76%, 46% 11.54%, 47% 12.33%, 48% 13.11%, 49% 13.89%, 50% 14.67%, 51% 15.44%, 52% 16.2%, 53% 16.94%, 54% 17.66%, 55% 18.37%, 56% 19.05%, 57% 19.71%, 58% 20.33%, 59% 20.93%, 60% 21.49%, 61% 22.02%, 62% 22.51%, 63% 22.96%, 64% 23.37%, 65% 23.73%, 66% 24.06%, 67% 24.33%, 68% 24.56%, 69% 24.74%, 70% 24.88%, 71% 24.96%, 72% 25%, 73% 24.99%, 74% 24.92%, 75% 24.81%, 76% 24.65%, 77% 24.44%, 78% 24.19%, 79% 23.88%, 80% 23.54%, 81% 23.15%, 82% 22.71%, 83% 22.24%, 84% 21.73%, 85% 21.18%, 86% 20.6%, 87% 19.99%, 88% 19.34%, 89% 18.67%, 90% 17.98%, 91% 17.26%, 92% 16.53%, 93% 15.78%, 94% 15.01%, 95% 14.24%, 96% 13.46%, 97% 12.67%, 98% 11.89%, 99% 11.11%, 100% 10.33%);
+  margin: 30px 0 0;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+}
+.footer-content-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+  height: auto;
+}
+.footer-content-logo img {
+  background-color: #ffffff;
+}
+.footer-content-logo strong {
+  font-size: 25px;
+  line-height: 25px;
+  font-family: "LilitaOne";
+  font-weight: 400;
+  color: #e8ca05;
+}
+.footer-content-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: auto;
+  height: auto;
+}
+.footer-content-contact span {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "LilitaOne";
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+}
+.footer-content-contact a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "VarelaRound";
+  font-weight: 400;
+  color: #e8ca05;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+}
+.footer-content-contact a::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e8ca05;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out;
+}
+.footer-content-contact a:hover::after {
+  transform: scaleX(1);
+}
+.footer-content-contact .whatsapp::before {
+  content: url("../assets/icons/whatsapp.svg");
+}
+.footer-content-contact .tephone::before {
+  content: url("../assets/icons/telefone.svg");
+}
+.footer-creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.footer-creator span {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "VarelaRound";
+  font-weight: 400;
+  color: #ffffff;
+}
+.footer-creator-links {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.footer-creator-links a {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+}
+.footer-creator-links .github::before {
+  content: url("../assets/icons/github.svg");
+}
+.footer-creator-links .linkedin::before {
+  content: url("../assets/icons/linkedin.svg");
 }
 
 /* Formatação padrão */
@@ -392,15 +522,18 @@
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   padding-top: 100px;
 }
+body h1, body h2, body h3, body strong, body p, body span, body a {
+  overflow: hidden;
+}
 body main {
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
 body main section h3 {
   font-size: 30px;
@@ -409,7 +542,7 @@ body main section h3 {
   font-weight: 600;
   color: #000000;
   text-align: center;
-  overflow: hidden;
+  padding-top: 110px;
 }
 
 /*# sourceMappingURL=style.css.map */

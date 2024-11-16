@@ -12,20 +12,20 @@
     <header class="header">
         <div class="header-wrapper">
             <div class="header-logo">
-                <img src="./assets/icons/logo.svg" width="100px" height="100px" alt="Logo do projeto"/>
+                <img src="./assets/icons/logo.svg" width="100px" height="100px" alt="Logo da Pizzaria Garcia"/>
                 <h1>Pizzaria Garcia</h1>
             </div>
 
-            <nav>
+            <nav aria-label="Navegação principal">
                 <ul>
                     <li>
-                        <a href="#">Sabores</a>
+                        <a href="#flavors">Sabores</a>
                     </li>
                     <li>
-                        <a href="#">Promoções</a>
+                        <a href="#promotions">Promoções</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#contact">Contato</a>
                     </li>
                 </ul>
             </nav>
@@ -37,7 +37,7 @@
             <div class="webdoor-content">
                 <h2>A melhor pizza de Curitiba!</h2>
                 <p>Somente aqui na Pizzaria Garcia, conheça nossas opções:</p>
-                <a href="">Veja mais</a>
+                <a href="#flavors">Veja mais</a>
             </div>
 
             <img class="webdoor-image-1" src="./assets/images/pizza-webdoor.png" width="800px" height="600px" alt="Imagem de uma pizza"/>
@@ -54,7 +54,7 @@
             </div>
         </section>
 
-        <section class="flavors">
+        <section class="flavors" id="flavors">
             <h3>Conheça os nossos principais sabores</h3>
 
             <div class="flavors-cards">
@@ -64,7 +64,7 @@
                     <p>
                         Massa de pizza, molho de tomate, mussarela, frango desfiado, catupiry, orégano, azeitonas.
                     </p>
-                    <a href="#">Peça já</a>
+                    <a href="#contact">Peça já</a>
                 </div>
 
                 <div class="flavors-cards-item">
@@ -73,7 +73,7 @@
                     <p>
                         Massa de pizza, molho de tomate, mussarela, parmesão, gorgonzola, provolone, orégano.
                     </p>
-                    <a href="#">Peça já</a>
+                    <a href="#contact">Peça já</a>
                 </div>
 
                 <div class="flavors-cards-item">
@@ -82,7 +82,7 @@
                     <p>
                         Massa de pizza, molho de tomate, mussarela, calabresa fatiada, cebola, orégano, azeitonas.
                     </p>
-                    <a href="#">Peça já</a>
+                    <a href="#contact">Peça já</a>
                 </div>
 
                 <div class="flavors-cards-item">
@@ -91,7 +91,7 @@
                     <p>
                         Massa de pizza, molho de tomate, mussarela, presunto, ovos cozidos, cebola, azeitonas, pimentão, orégano.
                     </p>
-                    <a href="#">Peça já</a>
+                    <a href="#contact">Peça já</a>
                 </div>
 
                 <div class="flavors-cards-item">
@@ -100,7 +100,7 @@
                     <p>
                         Massa de pizza, metade chocolate ao leite derretido, metade chocolate branco derretido, granulado para decorar.
                     </p>
-                    <a href="#">Peça já</a>
+                    <a href="#contact">Peça já</a>
                 </div>
 
                 <div class="flavors-cards-item">
@@ -109,12 +109,12 @@
                     <p>
                         Massa de pizza, banana fatiada, açúcar, canela, leite condensado.
                     </p>
-                    <a href="#">Peça já</a>
+                    <a href="#contact">Peça já</a>
                 </div>
             </div>
         </section>
 
-        <section class="promotions">
+        <section class="promotions" id="promotions">
             <h3>Veja as promoções desse mês</h3>
 
             <div class="promotions-cards">
@@ -136,8 +136,30 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Pizzaria Garcia. Todos os direitos reservados.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-content-logo">
+                <img src="./assets/icons/logo.svg" width="100px" height="100px" alt="Logo da Pizzaria Garcia"/>
+                <strong>Pizzaria Garcia</strong>
+            </div>
+
+            <div class="footer-content-contact" id="contact">
+                <span>Entre em contato:</span>
+
+                <a href="tel:00000-0000" class="whatsapp" aria-label="Ligar para o whatsApp">(00) 00000-0000</a>
+                <a href="tel:0000-0000" class="tephone" aria-label="Ligar para o telefone">(00) 0000-0000</a>
+            </div>
+        </div>
+
+        <div class="footer-creator">
+            <span>Projeto criado por Luis Antonio, entre em contato:</span>
+
+            <div class="footer-creator-links">
+                <a href="https://github.com/LagAntunes" class="github" target="_blank" aria-label="Acessar o meu Github" title="Acessar o meu Github">Github</a>
+
+                <a href="https://www.linkedin.com/in/luis-antonio-garcia-antunes/" class="linkedin" target="_blank" aria-label="Acessar o meu Linkedin" title="Acessar o meu Linkedin">Linkedin</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

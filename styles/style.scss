@@ -3,23 +3,29 @@
 @import './components/webdoor.scss';
 @import './components/flavors.scss';
 @import './components/promotions.scss';
+@import './components/footer.scss';
 
 /* Formatação padrão */
 *, html {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
     padding-top: 100px;
 
+    h1, h2, h3, strong, p, span, a {
+        overflow: hidden;
+    }
+
     main {
         display: flex;
         flex-direction: column;
-        gap: 30px;
 
         section {
+
             h3 {
                 font-size: 30px;
                 line-height: 32px;
@@ -27,7 +33,7 @@ body {
                 font-weight: 600;
                 color: #000000;
                 text-align: center;
-                overflow: hidden;
+                padding-top: 110px;
             }
         }
     }

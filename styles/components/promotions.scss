@@ -19,7 +19,7 @@
             justify-content: center;
             gap: 15px;
             width: 33.3%;
-            height: 220px;
+            height: auto;
             padding: 20px 170px 20px 20px;
             position: relative;
             overflow: hidden;
@@ -80,7 +80,6 @@
                 font-family: "LilitaOne";
                 font-weight: 600;
                 color: #000000;
-                overflow: hidden;
             }
 
             p {
@@ -89,7 +88,6 @@
                 font-family: "VarelaRound";
                 font-weight: 500;
                 color: #000000;
-                overflow: hidden;
 
                 span {
                     color: #e02b2b;
