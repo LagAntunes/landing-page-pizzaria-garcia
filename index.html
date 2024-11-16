@@ -4,162 +4,171 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pizzaria Garcia</title>
-        <!--Links-->
+
+        <!--Estilos do projeto-->
         <link rel="stylesheet" href="styles/style.css">
+        <!--Favicon-->
         <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+        <!--Biblioteca de animação-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
-<body>
-    <header class="header">
-        <div class="header-wrapper">
-            <div class="header-logo">
-                <img src="./assets/icons/logo.svg" width="100px" height="100px" alt="Logo da Pizzaria Garcia"/>
-                <h1>Pizzaria Garcia</h1>
+
+    <body>
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <img src="./assets/icons/logo.svg" width="100px" height="100px" alt="Logo da Pizzaria Garcia"/>
+                    <h1>Pizzaria Garcia</h1>
+                </div>
+
+                <nav aria-label="Navegação principal">
+                    <ul>
+                        <li>
+                            <a href="#flavors">Sabores</a>
+                        </li>
+                        <li>
+                            <a href="#promotions">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section class="webdoor">
+                <div class="webdoor-content">
+                    <h2>A melhor pizza de Curitiba!</h2>
+                    <p>Somente aqui na Pizzaria Garcia, conheça nossas opções:</p>
+                    <a href="#flavors">Veja mais</a>
+                </div>
+
+                <img class="webdoor-image-1" src="./assets/images/pizza-webdoor.png" width="800px" height="600px" alt="Imagem de uma pizza"/>
+
+                <img class="webdoor-image-2" src="./assets/images/pimentao.png" width="400px" height="400px" alt="Imagem de um pimentão"/>
+
+                <img class="webdoor-image-3" src="./assets/images/tomate.png" width="400px" height="400px" alt="Imagem de um tomate"/>
+
+                <img class="webdoor-image-4" src="./assets/images/queijo.png" width="400px" height="400px" alt="Imagem de um queijo"/>
+
+                <div class="webdoor-circle">
+                    <p>Pizzas à partir de</p>
+                    <span>R$ 29,99</span>
+                </div>
+            </section>
+
+            <section class="flavors" id="flavors">
+                <h3>Conheça os nossos principais sabores</h3>
+
+                <div class="flavors-cards">
+                    <div class="flavors-cards-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="./assets/images/pizza-frango-catupiry.jpg" width="328px" height="220px" alt="Pizza sabor Frango com catupiry">
+                        <strong>Frango com catupiry</strong>
+                        <p>
+                            Massa de pizza, molho de tomate, mussarela, frango desfiado, catupiry, orégano, azeitonas.
+                        </p>
+                        <a href="#contact">Peça já</a>
+                    </div>
+
+                    <div class="flavors-cards-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="./assets/images/pizza-quatro-queijos.jpg" width="328px" height="220px" alt="Pizza sabor Quatro queijos">
+                        <strong>Quatro queijos</strong>
+                        <p>
+                            Massa de pizza, molho de tomate, mussarela, parmesão, gorgonzola, provolone, orégano.
+                        </p>
+                        <a href="#contact">Peça já</a>
+                    </div>
+
+                    <div class="flavors-cards-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="./assets/images/pizza-calabresa.jpg" width="328px" height="220px" alt="Pizza sabor Calabresa">
+                        <strong>Calabresa</strong>
+                        <p>
+                            Massa de pizza, molho de tomate, mussarela, calabresa fatiada, cebola, orégano, azeitonas.
+                        </p>
+                        <a href="#contact">Peça já</a>
+                    </div>
+
+                    <div class="flavors-cards-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="./assets/images/pizza-portuguesa.jpg" width="328px" height="220px" alt="Pizza sabor Portuguesa">
+                        <strong>Portuguesa</strong>
+                        <p>
+                            Massa de pizza, molho de tomate, mussarela, presunto, ovos cozidos, cebola, azeitonas, pimentão, orégano.
+                        </p>
+                        <a href="#contact">Peça já</a>
+                    </div>
+
+                    <div class="flavors-cards-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="./assets/images/pizza-dois-amores.jpg" width="328px" height="220px" alt="Pizza sabor Dois amores">
+                        <strong>Dois amores</strong>
+                        <p>
+                            Massa de pizza, metade chocolate ao leite derretido, metade chocolate branco derretido, granulado para decorar.
+                        </p>
+                        <a href="#contact">Peça já</a>
+                    </div>
+
+                    <div class="flavors-cards-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="./assets/images/pizza-banana-canela.jpg" width="328px" height="220px" alt="Pizza sabor Banana com canela">
+                        <strong>Banana com canela</strong>
+                        <p>
+                            Massa de pizza, banana fatiada, açúcar, canela, leite condensado.
+                        </p>
+                        <a href="#contact">Peça já</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="promotions" id="promotions">
+                <h3>Veja as promoções desse mês</h3>
+
+                <div class="promotions-cards">
+                    <div class="promotions-cards-item" data-aos="fade-right" data-aos-delay="0">
+                        <strong>Combo Mini-pizza</strong>
+                        <p>Compre uma mini-pizza e, por mais <span>R$ 2,00</span>, leve outra</p>
+                    </div>
+
+                    <div class="promotions-cards-item" data-aos="fade-right" data-aos-delay="200">
+                        <strong>Combo Borda recheada</strong>
+                        <p>Compre uma pizza de qualquer tamanho e, por mais <span>R$ 5,00</span>, escolha entre <span>catupiry</span>, <span>cheddar</span> ou <span>chocolate</span> para rechear a borda da sua pizza</p>
+                    </div>
+
+                    <div class="promotions-cards-item" data-aos="fade-right" data-aos-delay="400">
+                        <strong>Combo Família</strong>
+                        <p>Compre duas pizzas tamanho família e ganhe um <span>refrigerante 2L</span> grátis</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-content-logo">
+                    <img src="./assets/icons/logo.svg" width="100px" height="100px" alt="Logo da Pizzaria Garcia"/>
+                    <strong>Pizzaria Garcia</strong>
+                </div>
+
+                <div class="footer-content-contact" id="contact">
+                    <span>Entre em contato:</span>
+
+                    <a href="tel:00000-0000" class="whatsapp" aria-label="Ligar para o whatsApp">(00) 00000-0000</a>
+                    <a href="tel:0000-0000" class="tephone" aria-label="Ligar para o telefone">(00) 0000-0000</a>
+                </div>
             </div>
 
-            <nav aria-label="Navegação principal">
-                <ul>
-                    <li>
-                        <a href="#flavors">Sabores</a>
-                    </li>
-                    <li>
-                        <a href="#promotions">Promoções</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <main>
-        <section class="webdoor">
-            <div class="webdoor-content">
-                <h2>A melhor pizza de Curitiba!</h2>
-                <p>Somente aqui na Pizzaria Garcia, conheça nossas opções:</p>
-                <a href="#flavors">Veja mais</a>
-            </div>
+            <div class="footer-creator">
+                <span>Projeto criado por Luis Antonio, entre em contato:</span>
 
-            <img class="webdoor-image-1" src="./assets/images/pizza-webdoor.png" width="800px" height="600px" alt="Imagem de uma pizza"/>
+                <div class="footer-creator-links">
+                    <a href="https://github.com/LagAntunes" class="github" target="_blank" aria-label="Acessar o meu Github" title="Acessar o meu Github">Github</a>
 
-            <img class="webdoor-image-2" src="./assets/images/pimentao.png" width="400px" height="400px" alt="Imagem de um pimentão"/>
-
-            <img class="webdoor-image-3" src="./assets/images/tomate.png" width="400px" height="400px" alt="Imagem de um tomate"/>
-
-            <img class="webdoor-image-4" src="./assets/images/queijo.png" width="400px" height="400px" alt="Imagem de um queijo"/>
-
-            <div class="webdoor-circle">
-                <p>Pizzas à partir de</p>
-                <span>R$ 29,99</span>
-            </div>
-        </section>
-
-        <section class="flavors" id="flavors">
-            <h3>Conheça os nossos principais sabores</h3>
-
-            <div class="flavors-cards">
-                <div class="flavors-cards-item">
-                    <img src="./assets/images/pizza-frango-catupiry.jpg" width="328px" height="220px" alt="Pizza sabor Frango com catupiry">
-                    <strong>Frango com catupiry</strong>
-                    <p>
-                        Massa de pizza, molho de tomate, mussarela, frango desfiado, catupiry, orégano, azeitonas.
-                    </p>
-                    <a href="#contact">Peça já</a>
-                </div>
-
-                <div class="flavors-cards-item">
-                    <img src="./assets/images/pizza-quatro-queijos.jpg" width="328px" height="220px" alt="Pizza sabor Quatro queijos">
-                    <strong>Quatro queijos</strong>
-                    <p>
-                        Massa de pizza, molho de tomate, mussarela, parmesão, gorgonzola, provolone, orégano.
-                    </p>
-                    <a href="#contact">Peça já</a>
-                </div>
-
-                <div class="flavors-cards-item">
-                    <img src="./assets/images/pizza-calabresa.jpg" width="328px" height="220px" alt="Pizza sabor Calabresa">
-                    <strong>Calabresa</strong>
-                    <p>
-                        Massa de pizza, molho de tomate, mussarela, calabresa fatiada, cebola, orégano, azeitonas.
-                    </p>
-                    <a href="#contact">Peça já</a>
-                </div>
-
-                <div class="flavors-cards-item">
-                    <img src="./assets/images/pizza-portuguesa.jpg" width="328px" height="220px" alt="Pizza sabor Portuguesa">
-                    <strong>Portuguesa</strong>
-                    <p>
-                        Massa de pizza, molho de tomate, mussarela, presunto, ovos cozidos, cebola, azeitonas, pimentão, orégano.
-                    </p>
-                    <a href="#contact">Peça já</a>
-                </div>
-
-                <div class="flavors-cards-item">
-                    <img src="./assets/images/pizza-dois-amores.jpg" width="328px" height="220px" alt="Pizza sabor Dois amores">
-                    <strong>Dois amores</strong>
-                    <p>
-                        Massa de pizza, metade chocolate ao leite derretido, metade chocolate branco derretido, granulado para decorar.
-                    </p>
-                    <a href="#contact">Peça já</a>
-                </div>
-
-                <div class="flavors-cards-item">
-                    <img src="./assets/images/pizza-banana-canela.jpg" width="328px" height="220px" alt="Pizza sabor Banana com canela">
-                    <strong>Banana com canela</strong>
-                    <p>
-                        Massa de pizza, banana fatiada, açúcar, canela, leite condensado.
-                    </p>
-                    <a href="#contact">Peça já</a>
+                    <a href="https://www.linkedin.com/in/luis-antonio-garcia-antunes/" class="linkedin" target="_blank" aria-label="Acessar o meu Linkedin" title="Acessar o meu Linkedin">Linkedin</a>
                 </div>
             </div>
-        </section>
+        </footer>
 
-        <section class="promotions" id="promotions">
-            <h3>Veja as promoções desse mês</h3>
-
-            <div class="promotions-cards">
-                <div class="promotions-cards-item">
-                    <strong>Combo Mini-pizza</strong>
-                    <p>Compre uma mini-pizza e, por mais <span>R$ 2,00</span>, leve outra</p>
-                </div>
-
-                <div class="promotions-cards-item">
-                    <strong>Combo Borda recheada</strong>
-                    <p>Compre uma pizza de qualquer tamanho e, por mais <span>R$ 5,00</span>, escolha entre <span>catupiry</span>, <span>cheddar</span> ou <span>chocolate</span> para rechear a borda da sua pizza</p>
-                </div>
-
-                <div class="promotions-cards-item">
-                    <strong>Combo Família</strong>
-                    <p>Compre duas pizzas tamanho família e ganhe um <span>refrigerante 2L</span> grátis</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-content-logo">
-                <img src="./assets/icons/logo.svg" width="100px" height="100px" alt="Logo da Pizzaria Garcia"/>
-                <strong>Pizzaria Garcia</strong>
-            </div>
-
-            <div class="footer-content-contact" id="contact">
-                <span>Entre em contato:</span>
-
-                <a href="tel:00000-0000" class="whatsapp" aria-label="Ligar para o whatsApp">(00) 00000-0000</a>
-                <a href="tel:0000-0000" class="tephone" aria-label="Ligar para o telefone">(00) 0000-0000</a>
-            </div>
-        </div>
-
-        <div class="footer-creator">
-            <span>Projeto criado por Luis Antonio, entre em contato:</span>
-
-            <div class="footer-creator-links">
-                <a href="https://github.com/LagAntunes" class="github" target="_blank" aria-label="Acessar o meu Github" title="Acessar o meu Github">Github</a>
-
-                <a href="https://www.linkedin.com/in/luis-antonio-garcia-antunes/" class="linkedin" target="_blank" aria-label="Acessar o meu Linkedin" title="Acessar o meu Linkedin">Linkedin</a>
-            </div>
-        </div>
-    </footer>
-</body>
+        <!--Scripts-->
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </body>
 </html>
