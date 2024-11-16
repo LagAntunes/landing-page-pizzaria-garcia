@@ -25,6 +25,7 @@
             gap: 10px;
             width: auto;
             height: auto;
+            padding-left: 20px;
     
             img {
                 background-color: #ffffff;
@@ -45,6 +46,7 @@
             gap: 15px;
             width: auto;
             height: auto;
+            padding-right: 20px;
     
             span {
                 font-size: 20px;
@@ -115,6 +117,7 @@
             font-family: "VarelaRound";
             font-weight: 400;
             color: #ffffff;
+            text-align: center;
         }
 
         &-links {
@@ -145,3 +148,38 @@
 }
 
 //Responsivo
+@media (max-width: 1023px) {
+    .footer {
+        &-content {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        &-content {
+            flex-direction: column;
+            gap: 30px;
+    
+            &-logo {
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 0;
+            }
+    
+            &-contact {
+                padding-right: 0;
+        
+                span {
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+    
+                a {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
