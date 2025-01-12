@@ -102,41 +102,28 @@
 }
 .webdoor {
   display: flex;
-  max-width: 1400px;
   width: 100%;
   height: 600px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
-.webdoor::before {
-  content: "";
-  background: url("../assets/images/xadrez-3.svg");
-  width: 50%;
+.webdoor picture {
+  width: 100%;
   height: 100%;
-  opacity: 0.1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
-.webdoor::after {
-  content: "";
-  width: 50%;
+.webdoor picture img {
+  width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 7;
-  background-color: #e02b2b;
+  object-fit: cover;
 }
 .webdoor-content {
   display: flex;
   flex-direction: column;
   max-width: 450px;
-  width: 100%;
   height: auto;
   padding: 80px 0 0 20px;
+  position: absolute;
 }
 .webdoor-content h2 {
   font-size: 70px;
@@ -175,116 +162,9 @@
 .webdoor-content a:hover {
   background-color: #000000;
 }
-.webdoor .webdoor-image-1 {
-  width: 800px;
-  height: 600px;
-  position: absolute;
-  top: 60%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  z-index: 8;
-}
-.webdoor .webdoor-image-2 {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: -20px;
-  left: 98%;
-  transform: translate(-50%, -50%);
-  z-index: 8;
-  rotate: 320deg;
-}
-.webdoor .webdoor-image-3 {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 25%;
-  left: 102%;
-  transform: translate(-50%, -50%);
-  z-index: 8;
-  rotate: 320deg;
-}
-.webdoor .webdoor-image-4 {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 90%;
-  left: 95%;
-  z-index: 8;
-  transform: translate(-50%, -50%) scaleX(-1);
-}
-.webdoor-circle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  background-color: #e8ca05;
-  padding: 30px;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9;
-}
-.webdoor-circle p {
-  font-size: 20px;
-  line-height: 20px;
-  font-family: "VarelaRound";
-  font-weight: 600;
-  color: #ffffff;
-  text-align: center;
-}
-.webdoor-circle span {
-  font-size: 25px;
-  line-height: 25px;
-  font-family: "LilitaOne";
-  font-weight: 600;
-  color: #e02b2b;
-  text-align: center;
-}
 
-@media (max-width: 1023px) {
-  .webdoor {
-    max-width: 100%;
-  }
-  .webdoor::before {
-    width: 100%;
-  }
-  .webdoor::after {
-    width: 100%;
-    height: 30%;
-    top: unset;
-    bottom: 0;
-    clip-path: polygon(100% 100%, 0% 100%, 0% 10.33%, 1% 9.56%, 2% 8.8%, 3% 8.06%, 4% 7.34%, 5% 6.63%, 6% 5.95%, 7% 5.29%, 8% 4.67%, 9% 4.07%, 10% 3.51%, 11% 2.98%, 12% 2.49%, 13% 2.04%, 14% 1.63%, 15% 1.27%, 16% 0.94%, 17% 0.67%, 18% 0.44%, 19% 0.26%, 20% 0.12%, 21% 0.04%, 22% 0%, 23% 0.01%, 24% 0.08%, 25% 0.19%, 26% 0.35%, 27% 0.56%, 28% 0.81%, 29% 1.12%, 30% 1.46%, 31% 1.85%, 32% 2.29%, 33% 2.76%, 34% 3.27%, 35% 3.82%, 36% 4.4%, 37% 5.01%, 38% 5.66%, 39% 6.33%, 40% 7.02%, 41% 7.74%, 42% 8.47%, 43% 9.22%, 44% 9.99%, 45% 10.76%, 46% 11.54%, 47% 12.33%, 48% 13.11%, 49% 13.89%, 50% 14.67%, 51% 15.44%, 52% 16.2%, 53% 16.94%, 54% 17.66%, 55% 18.37%, 56% 19.05%, 57% 19.71%, 58% 20.33%, 59% 20.93%, 60% 21.49%, 61% 22.02%, 62% 22.51%, 63% 22.96%, 64% 23.37%, 65% 23.73%, 66% 24.06%, 67% 24.33%, 68% 24.56%, 69% 24.74%, 70% 24.88%, 71% 24.96%, 72% 25%, 73% 24.99%, 74% 24.92%, 75% 24.81%, 76% 24.65%, 77% 24.44%, 78% 24.19%, 79% 23.88%, 80% 23.54%, 81% 23.15%, 82% 22.71%, 83% 22.24%, 84% 21.73%, 85% 21.18%, 86% 20.6%, 87% 19.99%, 88% 19.34%, 89% 18.67%, 90% 17.98%, 91% 17.26%, 92% 16.53%, 93% 15.78%, 94% 15.01%, 95% 14.24%, 96% 13.46%, 97% 12.67%, 98% 11.89%, 99% 11.11%, 100% 10.33%);
-  }
-  .webdoor .webdoor-image-1 {
-    width: 70%;
-    height: 85%;
-  }
-  .webdoor .webdoor-image-2, .webdoor .webdoor-image-3, .webdoor .webdoor-image-4 {
-    display: none;
-  }
-  .webdoor-circle {
-    width: 80px;
-    height: 80px;
-    left: 85%;
-  }
-  .webdoor-circle p {
-    font-size: 16px;
-    line-height: 16px;
-  }
-  .webdoor-circle span {
-    font-size: 18px;
-    line-height: 18px;
-  }
-}
 @media (max-width: 767px) {
   .webdoor-content {
-    max-width: 80%;
     padding: 50px 0 0 20px;
   }
   .webdoor-content h2 {
@@ -298,33 +178,11 @@
 }
 @media (max-width: 425px) {
   .webdoor-content {
-    max-width: 100%;
     padding: 30px 20px 0;
   }
   .webdoor-content h2 {
     font-size: 50px;
     line-height: 55px;
-  }
-  .webdoor .webdoor-image-1 {
-    width: 85%;
-    height: 80%;
-    top: 70%;
-    left: 50%;
-  }
-  .webdoor-circle {
-    width: 70px;
-    height: 70px;
-    padding: 20px;
-    top: 58%;
-    left: 70%;
-  }
-  .webdoor-circle p {
-    font-size: 16px;
-    line-height: 16px;
-  }
-  .webdoor-circle span {
-    font-size: 18px;
-    line-height: 18px;
   }
 }
 .flavors {
